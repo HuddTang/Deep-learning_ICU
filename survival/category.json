@@ -1,0 +1,7 @@
+{
+"patient_inf": ["age","D_emergency","D_first_hosp_stay","adimtoicu"],
+  "history": ["D_AIDS","D_CRF", "D_dobutamine", "D_immune","D_leukemia", "D_liver_cirrhosis", "D_liver_failure", "D_lymphoma","D_metastatic_cancer", "ele_sur"],
+  "signs": ["GCS","HR","MAP","urineoutput_24hr","RR","sysbp","tempC","FiO2","HCO3","Hct","PaO2","PCO2","pH"],
+  "laboratory": ["Alb","Bil","BUN","Cr","Glu","K","Na","PLT","WBC"],
+  "Treatment": ["D_mechvent","D_vent","dopamine","epinephrine"]
+}

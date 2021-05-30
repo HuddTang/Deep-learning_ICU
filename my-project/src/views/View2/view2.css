@@ -1,0 +1,18 @@
+#view2 {
+    height: 500px;
+    width: 450px;
+}
+
+#survival {
+    width: 70px;
+    display: flex;
+    /* margin: 2px; */
+    float: left;
+}
+
+#lineChart {
+    margin-top: 15px;
+    margin-left: 12px;
+    width: 420px;
+    height: 420px;
+}
