@@ -378,7 +378,8 @@ class snn(object):
 
         sumr = s / s.sum(axis=1).reshape(s.shape[0] ,1)
         score = sumr.sum(axis=0)
-        VIP = score / score.max()
+        # VIP = score / score.max()
+        VIP = score
         for i, v in enumerate(VIP):
             print("%dth feature score : %g." % (i, v))
         return VIP

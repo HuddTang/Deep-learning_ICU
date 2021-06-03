@@ -382,7 +382,7 @@ class snn(object):
             print("%dth feature score : %g." % (i, v))
         return VIP
 
-    def survival_function(self, X, algo="wwe", base_X=None, base_label=None,
+    def survival_function(self, X, algo="kp", base_X=None, base_label=None,
                           smoothed=False, is_plot=True):
 
         risk = self.predict(X)
@@ -492,9 +492,8 @@ def cur(info):
     model.load_split(cut)
     print('split_input_success')
     model.load_model()
-    T0, ST = model.survival_function(np.array(info),algo="wwe",base_X=data, base_label={'e':e, 't':t})
+    T0, ST = model.survival_function(np.array(info),algo="kp",base_X=data, base_label={'e':e, 't':t})
     model.close()
-    print([T0.tolist(),ST[0].tolist()])
     return [T0.tolist(),ST[0].tolist()]
 
 

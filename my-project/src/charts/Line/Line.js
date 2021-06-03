@@ -65,7 +65,7 @@ let VisLine = (_svg) => {
         canvas = canvas_all.append('g')
             .attr("transform","translate(15,12)")
 
-        x_scale = d3.scaleLinear().range([0, 346]).domain([0,60])
+        x_scale = d3.scaleLinear().range([0, 346]).domain([0,1000])
         x_time = d3.scaleLinear().range([0, 346]).domain([0,1000])
         y_scale = d3.scaleLinear().range([346, 0]).domain([0,1])
         xAxis = d3.axisBottom(x_time).ticks(12)
@@ -88,7 +88,7 @@ let VisLine = (_svg) => {
         // for(let i=0; i<data[0].length-12; i++){
         //     graph.push({x: data[0][i], y:data[1][i]})
         // }
-        for(let i=0; i<data[0].length; i++){
+        for(let i=0; i<3974; i++){
             graph.push({x: data[0][i], y:data[1][i]})
         }
         line = d3.line()

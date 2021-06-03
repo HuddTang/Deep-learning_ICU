@@ -10,12 +10,6 @@ CORS(app)
 
 @app.route('/prediction',methods=['POST'])
 def _predict():
-    print(request.json['admit'])
-    print(request.json['history'])
-    print(request.json['sign'])
-    print(request.json['blood'])
-    print(request.json['labor'])
-    print(request.json['treat'])
     admit = request.json['admit']
     history = request.json['history']
     sign = request.json['sign']
@@ -53,7 +47,7 @@ def _predict():
         patients[0].append((float(treat[i]) - Min[na][i]) / (Max[na][i] - Min[na][i]))
 
     results = survival_LCCS.cur(patients)
-    print(results)
+    print(results[0])
     print(type(results))
     print(type(results[0]))
     print(type(results[1]))
