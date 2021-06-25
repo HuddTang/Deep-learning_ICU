@@ -25,6 +25,7 @@ pip install flask_cors
 
 Install npm Dependencies
 ```
+cd my-project
 npm install
 ```
 
@@ -32,6 +33,7 @@ npm install
 
 Start the front end project
 ```
+cd my-project
 npm start
 ```
 
