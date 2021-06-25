@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18f7369d-f82c-4ef3-a8e7-26ebb62017c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../survival/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/charts/Line/Line.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/charts/Line/Line.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../survival/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../survival/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../survival/survival_LCCS.py" beforeDir="false" afterPath="$PROJECT_DIR$/../survival/survival_LCCS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../survival/survival_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/../survival/survival_train.py" afterDir="false" />
-    </list>
+    <list default="true" id="18f7369d-f82c-4ef3-a8e7-26ebb62017c7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +47,7 @@
       <workItem from="1620312550752" duration="46000" />
       <workItem from="1620363213504" duration="5417000" />
       <workItem from="1622216628847" duration="3545000" />
-      <workItem from="1622690567168" duration="589000" />
+      <workItem from="1622690567168" duration="908000" />
     </task>
     <servers />
   </component>

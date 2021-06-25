@@ -3,7 +3,7 @@ from sklearn.preprocessing import normalize
 import pandas as pd
 import json
 
-df = pd.read_csv("./Download/A_train+10%B_DL.csv",encoding='utf-8')
+df = pd.read_csv("./Download/B_300fromtotal_DL_LIME.csv",encoding='utf-8')
 #print(df)
 print(df.info())
 label = df[['hos_mort','time']].values
@@ -32,9 +32,9 @@ for key,value in data.items():
     patients = np.concatenate((patients,value),axis=1)
 
 
-with open('patient_train.npy', 'wb') as f:
+with open('patient_lime.npy', 'wb') as f:
     np.save(f,patients)
-with open('label_train.npy', 'wb') as f:
+with open('label_lime.npy', 'wb') as f:
     np.save(f,label)
 # with open('cut.json','w') as f:
 #     json.dump(cut,f)

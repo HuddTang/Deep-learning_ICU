@@ -45,13 +45,22 @@ explainer = lime.lime_tabular.LimeTabularExplainer(data, feature_names=f_name, c
 headers = []
 results = []
 
-for i in range(500):
+for i in range(300):
     exp = explainer.explain_instance(data_test[i,:], model.predict,num_features=L)
     re = exp.as_list()
-    if i == 0:
-        headers = [x[0] for x in re]
-    results.append([x[1] for x in re])
-with open('lime.csv','w',newline='') as f:
+    title = [x[0] for x in re]
+    title_filter = []
+    for t in title:
+        new_string = ''.join([i for i in t if not i.isdigit() and i!='<' and i!='>' and i!='=' and i!='.'])
+        new_string = new_string.replace(" ",'')
+        print(new_string)
+        title_filter.append(new_string)
+    print(title_filter)
+    values = [x[1] for x in re]
+    order = sorted(range(len(title_filter)), key=lambda k: title_filter[k])
+    results.append([title[x] for x in order])
+    results.append([values[x] for x in order])
+with open('lime2.csv','w',newline='') as f:
     f_csv = csv.writer(f)
-    f_csv.writerow(headers)
+    # f_csv.writerow(headers)
     f_csv.writerows(results)
