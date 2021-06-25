@@ -5,9 +5,11 @@ Deep-learning_ICU
 ## Install
 
 Install Python Version==3.5
+
 https://www.python.org/
 
 Install Node Version==10.12.0
+
 https://nodejs.org/
 
 Install Python Dependencies
